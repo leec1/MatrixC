@@ -30,7 +30,7 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	HACCEL hAccelTable;
 
 	// Initialize global strings
-	LoadString(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
+	_tcscpy_s(szTitle, _T("Matrix Manipulation Client"));
 	LoadString(hInstance, IDC_MATRIXC, szWindowClass, MAX_LOADSTRING);
 	MyRegisterClass(hInstance);
 
